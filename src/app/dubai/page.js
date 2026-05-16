@@ -1,6 +1,39 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 
+export const metadata = {
+  title: "Dubai Luxury Tour | Travel With Us",
+  description:
+    "Premium 6-day luxury Dubai tour with desert safari, Burj Khalifa access, Marina cruise, and high-end experiences.",
+  keywords: [
+    "Dubai luxury tour",
+    "Burj Khalifa",
+    "desert safari",
+    "Marina cruise",
+    "Dubai holiday",
+  ],
+  openGraph: {
+    title: "Dubai Luxury Tour | Travel With Us",
+    description:
+      "Premium 6-day luxury Dubai tour with desert safari, Burj Khalifa access, Marina cruise, and high-end experiences.",
+    url: "/dubai",
+    siteName: "Travel With Us",
+    type: "website",
+    images: [
+      {
+        url: "/images/logo-removebg.png",
+        alt: "Travel With Us Official logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dubai Luxury Tour | Travel With Us",
+    description:
+      "Premium 6-day luxury Dubai tour with desert safari, Burj Khalifa access, Marina cruise, and high-end experiences.",
+  },
+};
+
 export default function DubaiPage() {
   return (
     <main className="bg-slate-50 text-slate-900">

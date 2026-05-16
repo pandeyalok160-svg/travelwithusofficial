@@ -21,15 +21,35 @@ export default function Navbar() {
 
           <button
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-white/25 bg-white/10 text-white transition hover:bg-white/20 md:hidden"
+            className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/25 bg-white/10 text-white transition hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/75 md:hidden"
             aria-controls="mobile-menu"
             aria-expanded={isOpen}
             onClick={() => setIsOpen((current) => !current)}
+            title={isOpen ? "Close navigation menu" : "Open navigation menu"}
           >
-            <span className="sr-only">Toggle navigation</span>
-            <span className="block h-0.5 w-6 bg-white"></span>
-            <span className="mt-1 block h-0.5 w-6 bg-white"></span>
-            <span className="mt-1 block h-0.5 w-6 bg-white"></span>
+            <span className="sr-only">
+              {isOpen ? "Close navigation menu" : "Open navigation menu"}
+            </span>
+            <svg
+              viewBox="0 0 24 24"
+              className="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              {isOpen ? (
+                <path d="M6 6l12 12M18 6L6 18" />
+              ) : (
+                <>
+                  <path d="M3 7h18" />
+                  <path d="M3 12h18" />
+                  <path d="M3 17h18" />
+                </>
+              )}
+            </svg>
           </button>
 
           <div className="hidden items-center gap-5 md:flex">

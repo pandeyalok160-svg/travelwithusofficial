@@ -2,6 +2,39 @@
 import Navbar from "@/components/Navbar";
 import PackageCard from "@/components/PackageCard";
 
+export const metadata = {
+  title: "Luxury Travel Packages | Travel With Us",
+  description:
+    "Explore luxury holiday packages for Dubai, Malaysia, and Sri Lanka with Travel With Us Official.",
+  keywords: [
+    "luxury vacation",
+    "Dubai travel",
+    "Malaysia tours",
+    "Sri Lanka escapes",
+    "premium travel packages",
+  ],
+  openGraph: {
+    title: "Luxury Travel Packages | Travel With Us",
+    description:
+      "Explore luxury holiday packages for Dubai, Malaysia, and Sri Lanka with Travel With Us Official.",
+    url: "/",
+    siteName: "Travel With Us",
+    type: "website",
+    images: [
+      {
+        url: "/images/logo-removebg.png",
+        alt: "Travel With Us Official logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Luxury Travel Packages | Travel With Us",
+    description:
+      "Explore luxury holiday packages for Dubai, Malaysia, and Sri Lanka with Travel With Us Official.",
+  },
+};
+
 export default function Home() {
   return (
     <main className="bg-gray-50 min-h-screen">

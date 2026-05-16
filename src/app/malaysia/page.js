@@ -1,6 +1,39 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 
+export const metadata = {
+  title: "Malaysia Getaway | Travel With Us",
+  description:
+    "Enjoy a premium Malaysia getaway with luxury beaches, city tours, and cultural highlights on a stylish five-day holiday package.",
+  keywords: [
+    "Malaysia travel",
+    "Malaysia vacation",
+    "Langkawi",
+    "Petronas Towers",
+    "Batu Caves",
+  ],
+  openGraph: {
+    title: "Malaysia Getaway | Travel With Us",
+    description:
+      "Enjoy a premium Malaysia getaway with luxury beaches, city tours, and cultural highlights on a stylish five-day holiday package.",
+    url: "/malaysia",
+    siteName: "Travel With Us",
+    type: "website",
+    images: [
+      {
+        url: "/images/logo-removebg.png",
+        alt: "Travel With Us Official logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Malaysia Getaway | Travel With Us",
+    description:
+      "Enjoy a premium Malaysia getaway with luxury beaches, city tours, and cultural highlights on a stylish five-day holiday package.",
+  },
+};
+
 export default function MalaysiaPage() {
   return (
     <main className="bg-slate-50 text-slate-900">

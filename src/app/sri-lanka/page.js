@@ -1,6 +1,39 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 
+export const metadata = {
+  title: "Sri Lanka Escape | Travel With Us",
+  description:
+    "Discover Sri Lanka’s lush hills, coastal retreats, and cultural charms on a premium five-day luxury escape.",
+  keywords: [
+    "Sri Lanka travel",
+    "Sri Lanka holiday",
+    "Colombo tours",
+    "Kandy temple",
+    "tea country",
+  ],
+  openGraph: {
+    title: "Sri Lanka Escape | Travel With Us",
+    description:
+      "Discover Sri Lanka’s lush hills, coastal retreats, and cultural charms on a premium five-day luxury escape.",
+    url: "/sri-lanka",
+    siteName: "Travel With Us",
+    type: "website",
+    images: [
+      {
+        url: "/images/logo-removebg.png",
+        alt: "Travel With Us Official logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sri Lanka Escape | Travel With Us",
+    description:
+      "Discover Sri Lanka’s lush hills, coastal retreats, and cultural charms on a premium five-day luxury escape.",
+  },
+};
+
 export default function SriLankaPage() {
   return (
     <main className="bg-slate-50 text-slate-900">

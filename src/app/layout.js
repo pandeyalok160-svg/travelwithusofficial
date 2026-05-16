@@ -13,9 +13,42 @@ const poppins = Poppins({
   variable: "--font-body",
 });
 
+export const metadataBase = new URL("https://travelwithusofficial.com");
+
 export const metadata = {
-  title: "Travel With Us",
-  description: "Luxury Travel Experiences",
+  title: {
+    default: "Travel With Us",
+    template: "%s | Travel With Us",
+  },
+  description:
+    "Luxury travel experiences and premium holiday packages to Dubai, Malaysia, and Sri Lanka.",
+  keywords: [
+    "luxury travel",
+    "Dubai tour packages",
+    "Malaysia vacation",
+    "Sri Lanka holiday",
+    "travel packages",
+    "holiday tour",
+  ],
+  openGraph: {
+    title: "Travel With Us",
+    description:
+      "Luxury travel experiences and premium holiday packages to Dubai, Malaysia, and Sri Lanka.",
+    siteName: "Travel With Us",
+    type: "website",
+    images: [
+      {
+        url: "/images/logo-removebg.png",
+        alt: "Travel With Us Official logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Travel With Us",
+    description:
+      "Luxury travel experiences and premium holiday packages to Dubai, Malaysia, and Sri Lanka.",
+  },
 };
 
 export default function RootLayout({ children }) {
