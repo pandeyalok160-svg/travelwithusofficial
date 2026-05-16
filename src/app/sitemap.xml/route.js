@@ -28,7 +28,7 @@ function generateSiteMap() {
 </urlset>`;
 }
 
-export default function Sitemap() {
+export async function GET() {
   const sitemap = generateSiteMap();
   return new Response(sitemap, {
     headers: {
