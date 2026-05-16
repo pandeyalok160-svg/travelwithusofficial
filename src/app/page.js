@@ -1,4 +1,3 @@
-"use client";
 import Navbar from "@/components/Navbar";
 import PackageCard from "@/components/PackageCard";
 
@@ -58,17 +57,11 @@ export default function Home() {
             Luxury Holidays • Flights • Experiences
           </p>
 
-          <a href="#packages">
-            <button
-              onClick={() => {
-                document.getElementById("packages")?.scrollIntoView({
-                  behavior: "smooth",
-                });
-              }}
-              className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-xl text-lg font-semibold transition duration-300 hover:scale-105"
-            >
-              Explore Packages
-            </button>
+          <a
+            href="#packages"
+            className="inline-block rounded-xl bg-orange-500 px-8 py-3 text-lg font-semibold text-white transition duration-300 hover:bg-orange-600 hover:scale-105"
+          >
+            Explore Packages
           </a>
         </div>
       </section>
