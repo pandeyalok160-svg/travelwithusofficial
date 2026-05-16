@@ -51,10 +51,31 @@ export const metadata = {
   },
 };
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Travel With Us Official",
+  url: "https://travelwithusofficial.com",
+  logo: "https://travelwithusofficial.com/images/logo-removebg.png",
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+919650250052",
+      contactType: "customer service",
+      areaServed: "IN",
+      availableLanguage: ["English", "Hindi"],
+    },
+  ],
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${playfair.variable} ${poppins.variable}`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
         {children}
       </body>
     </html>
