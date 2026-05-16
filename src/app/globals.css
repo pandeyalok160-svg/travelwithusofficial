@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Use font variables provided by next/font in `layout.js` */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body, Arial, sans-serif);
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* Headings use the Playfair Display variable */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading, Georgia, 'Times New Roman', serif);
+}
+
+#contact:target {
+  animation: contact-highlight 1.4s ease-in-out;
+}
+
+@keyframes contact-highlight {
+  0% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 24px rgba(34, 197, 94, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+  }
+}
