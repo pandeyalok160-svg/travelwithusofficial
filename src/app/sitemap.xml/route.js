@@ -1,7 +1,7 @@
 export const dynamic = "force-static";
 export const dynamicParams = false;
 
-const baseUrl = "https://travelwithusofficial.com";
+const baseUrl = "https://www.travelwithusofficial.com";
 const lastMod = new Date().toISOString().split("T")[0];
 
 const pages = [
