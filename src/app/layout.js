@@ -49,6 +49,11 @@ export const metadata = {
     description:
       "Luxury travel experiences and premium holiday packages to Dubai, Malaysia, and Sri Lanka.",
   },
+  icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
 };
 
 const schemaData = {
